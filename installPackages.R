@@ -1,6 +1,6 @@
 # simple script to install useful packages not in base
 
-packages <- c(
+usefulPackages <- c(
               "ggplot2", # graphics
               "reshape2", # melting and casting
               "useful", # utils from Jared Lander, e.g. dataframe corners and formatting
@@ -11,7 +11,13 @@ packages <- c(
               "GGally", # e.g. for ggpairs, correlation matrix plotting
               "data.table", # data.frames with indices for speed
               "lubridate", # simplified date management
-              "scales" # formatting/scaling for strings/plots
+              "scales", # formatting/scaling for strings/plots
+              "boot", # bootstrapping. includes cv.glm (cross-val)
+              "glmnet", # Elastic net regularization
+              "doParallel", # foreach adapter for parallel package
+              "stringr", # consistent string manipulation
+              "arm" # regression, multi-level & hierarchical models
+                    # e.g. bayesglm to add priors
               )
 
-install.packages(packages)
+install.packages(usefulPackages)
