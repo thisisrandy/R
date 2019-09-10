@@ -39,6 +39,16 @@ usefulPackages <- c(
               ,"feather" # language-agnostic data storage
               ,"jsonlite" # JSON 
               ,"xml2" # XML
+              ,"purrr" # functional programming
+              ,"forcats" # categorical variable stuffs
+              ,"lazyeval" # in the name
+              ,"pryr" # computing on the language, e.g. compose and show_c_source
+              ,"readr" # read rectangular data sources into tribbles
+              ,"modelr" # pipe-able modeling functions
+              ,"MASS" # robust (against outliers) linear models (MASS::rlm)
+              ,"xgboost" # gradient boosting machines (like we used for Bing)
+              ,"broom" # "sweep" model data into tidiness
+              ,"ggrepel" # auto-separate text labels in plots
               )
 
 install.packages(usefulPackages)
